@@ -14,6 +14,8 @@
 		CB9E89962B02B43300A3A458 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E89952B02B43300A3A458 /* MainTabView.swift */; };
 		CB9E89982B02BA3800A3A458 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E89972B02BA3800A3A458 /* FeedView.swift */; };
 		CB9E899A2B02BB9900A3A458 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E89992B02BB9900A3A458 /* FeedCell.swift */; };
+		CB9E899C2B02EAC000A3A458 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E899B2B02EAC000A3A458 /* ExploreView.swift */; };
+		CB9E899E2B02EADA00A3A458 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E899D2B02EADA00A3A458 /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		CB9E89952B02B43300A3A458 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		CB9E89972B02BA3800A3A458 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		CB9E89992B02BB9900A3A458 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		CB9E899B2B02EAC000A3A458 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		CB9E899D2B02EADA00A3A458 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +189,8 @@
 		CB9E89922B02B3C300A3A458 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				CB9E899B2B02EAC000A3A458 /* ExploreView.swift */,
+				CB9E899D2B02EADA00A3A458 /* UserCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -278,7 +284,9 @@
 				CB9E899A2B02BB9900A3A458 /* FeedCell.swift in Sources */,
 				CB9E897A2B02B18F00A3A458 /* ContentView.swift in Sources */,
 				CB9E89782B02B18F00A3A458 /* tik_tok_iosApp.swift in Sources */,
+				CB9E899C2B02EAC000A3A458 /* ExploreView.swift in Sources */,
 				CB9E89962B02B43300A3A458 /* MainTabView.swift in Sources */,
+				CB9E899E2B02EADA00A3A458 /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
