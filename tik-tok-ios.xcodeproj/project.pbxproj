@@ -11,6 +11,7 @@
 		CB9E897A2B02B18F00A3A458 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E89792B02B18F00A3A458 /* ContentView.swift */; };
 		CB9E897C2B02B19300A3A458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9E897B2B02B19300A3A458 /* Assets.xcassets */; };
 		CB9E897F2B02B19300A3A458 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9E897E2B02B19300A3A458 /* Preview Assets.xcassets */; };
+		CB9E89962B02B43300A3A458 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9E89952B02B43300A3A458 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		CB9E89792B02B18F00A3A458 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB9E897B2B02B19300A3A458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB9E897E2B02B19300A3A458 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB9E89952B02B43300A3A458 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,13 @@
 		CB9E89762B02B18F00A3A458 /* tik-tok-ios */ = {
 			isa = PBXGroup;
 			children = (
+				CB9E898A2B02B24A00A3A458 /* App */,
+				CB9E89892B02B24800A3A458 /* Core */,
+				CB9E89882B02B24300A3A458 /* Extensions */,
+				CB9E89872B02B24000A3A458 /* Model */,
+				CB9E89862B02B23500A3A458 /* Services */,
+				CB9E89852B02B21E00A3A458 /* Utils */,
 				CB9E89772B02B18F00A3A458 /* tik_tok_iosApp.swift */,
-				CB9E89792B02B18F00A3A458 /* ContentView.swift */,
 				CB9E897B2B02B19300A3A458 /* Assets.xcassets */,
 				CB9E897D2B02B19300A3A458 /* Preview Content */,
 			);
@@ -65,6 +72,130 @@
 				CB9E897E2B02B19300A3A458 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB9E89852B02B21E00A3A458 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CB9E89862B02B23500A3A458 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CB9E89872B02B24000A3A458 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CB9E89882B02B24300A3A458 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CB9E89892B02B24800A3A458 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CB9E89942B02B3DA00A3A458 /* UploadMedia */,
+				CB9E89932B02B3D000A3A458 /* TabBar */,
+				CB9E89922B02B3C300A3A458 /* Search */,
+				CB9E89912B02B3A000A3A458 /* Root */,
+				CB9E89902B02B39800A3A458 /* Profile */,
+				CB9E898F2B02B39100A3A458 /* Notifications */,
+				CB9E898E2B02B38800A3A458 /* Feed */,
+				CB9E898D2B02B37B00A3A458 /* Components */,
+				CB9E898C2B02B37200A3A458 /* Comments */,
+				CB9E898B2B02B33B00A3A458 /* Authentication */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CB9E898A2B02B24A00A3A458 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CB9E898B2B02B33B00A3A458 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		CB9E898C2B02B37200A3A458 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		CB9E898D2B02B37B00A3A458 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CB9E898E2B02B38800A3A458 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		CB9E898F2B02B39100A3A458 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		CB9E89902B02B39800A3A458 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CB9E89912B02B3A000A3A458 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				CB9E89792B02B18F00A3A458 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		CB9E89922B02B3C300A3A458 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		CB9E89932B02B3D000A3A458 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CB9E89952B02B43300A3A458 /* MainTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		CB9E89942B02B3DA00A3A458 /* UploadMedia */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UploadMedia;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +270,7 @@
 			files = (
 				CB9E897A2B02B18F00A3A458 /* ContentView.swift in Sources */,
 				CB9E89782B02B18F00A3A458 /* tik_tok_iosApp.swift in Sources */,
+				CB9E89962B02B43300A3A458 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
