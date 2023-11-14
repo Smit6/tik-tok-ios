@@ -22,6 +22,9 @@
 		CBB43F402B02FF1C003A30DD /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB43F3F2B02FF1C003A30DD /* ProfileHeaderView.swift */; };
 		CBB43F442B030163003A30DD /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB43F432B030163003A30DD /* PostGridView.swift */; };
 		CBB43F462B030174003A30DD /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB43F452B030174003A30DD /* UserStatView.swift */; };
+		CBB43F482B032F74003A30DD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB43F472B032F74003A30DD /* Post.swift */; };
+		CBB43F4D2B032FFE003A30DD /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB43F4C2B032FFE003A30DD /* FeedViewModel.swift */; };
+		CBB43F502B033710003A30DD /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB43F4F2B033710003A30DD /* CustomVideoPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,10 @@
 		CBB43F3F2B02FF1C003A30DD /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		CBB43F432B030163003A30DD /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		CBB43F452B030174003A30DD /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
+		CBB43F472B032F74003A30DD /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		CBB43F4C2B032FFE003A30DD /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		CBB43F4E2B0334FA003A30DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CBB43F4F2B033710003A30DD /* CustomVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomVideoPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +80,7 @@
 		CB9E89762B02B18F00A3A458 /* tik-tok-ios */ = {
 			isa = PBXGroup;
 			children = (
+				CBB43F4E2B0334FA003A30DD /* Info.plist */,
 				CB9E898A2B02B24A00A3A458 /* App */,
 				CB9E89892B02B24800A3A458 /* Core */,
 				CB9E89882B02B24300A3A458 /* Extensions */,
@@ -111,6 +119,7 @@
 		CB9E89872B02B24000A3A458 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CBB43F472B032F74003A30DD /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +172,7 @@
 		CB9E898D2B02B37B00A3A458 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				CBB43F4F2B033710003A30DD /* CustomVideoPlayer.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -170,8 +180,9 @@
 		CB9E898E2B02B38800A3A458 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				CB9E89972B02BA3800A3A458 /* FeedView.swift */,
-				CB9E89992B02BB9900A3A458 /* FeedCell.swift */,
+				CBB43F4B2B032FA8003A30DD /* Service */,
+				CBB43F4A2B032FA4003A30DD /* View */,
+				CBB43F492B032FA1003A30DD /* ViewModel */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -242,6 +253,30 @@
 				CBB43F3D2B02FECC003A30DD /* CurrentUserProfileView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CBB43F492B032FA1003A30DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CBB43F4C2B032FFE003A30DD /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CBB43F4A2B032FA4003A30DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB9E89972B02BA3800A3A458 /* FeedView.swift */,
+				CB9E89992B02BB9900A3A458 /* FeedCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBB43F4B2B032FA8003A30DD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,10 +350,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB9E89982B02BA3800A3A458 /* FeedView.swift in Sources */,
+				CBB43F502B033710003A30DD /* CustomVideoPlayer.swift in Sources */,
 				CB9E89A22B02F17B00A3A458 /* NotificationCell.swift in Sources */,
 				CBB43F402B02FF1C003A30DD /* ProfileHeaderView.swift in Sources */,
 				CBB43F462B030174003A30DD /* UserStatView.swift in Sources */,
 				CB9E899A2B02BB9900A3A458 /* FeedCell.swift in Sources */,
+				CBB43F4D2B032FFE003A30DD /* FeedViewModel.swift in Sources */,
+				CBB43F482B032F74003A30DD /* Post.swift in Sources */,
 				CB9E897A2B02B18F00A3A458 /* ContentView.swift in Sources */,
 				CB9E89A02B02F0A100A3A458 /* NotificationView.swift in Sources */,
 				CB9E89782B02B18F00A3A458 /* tik_tok_iosApp.swift in Sources */,
@@ -463,6 +501,7 @@
 				DEVELOPMENT_TEAM = 4P897873TK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tik-tok-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -492,6 +531,7 @@
 				DEVELOPMENT_TEAM = 4P897873TK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tik-tok-ios/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
