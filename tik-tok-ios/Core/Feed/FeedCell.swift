@@ -30,7 +30,6 @@ struct FeedCell: View {
                     }
                     .foregroundStyle(.white)
                     .font(.subheadline)
-                    .border(.white)
 
                     Spacer()
                     
