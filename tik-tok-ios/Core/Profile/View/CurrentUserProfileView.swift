@@ -1,5 +1,5 @@
 //
-//  NotificationView.swift
+//  CurrentUserProfileView.swift
 //  tik-tok-ios
 //
 //  Created by Smitkumar Contractor on 11/13/23.
@@ -7,25 +7,25 @@
 
 import SwiftUI
 
-struct NotificationView: View {
+struct CurrentUserProfileView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack {
-                    LazyVStack(spacing: 24) {
-                        ForEach(0 ..< 10) { notification in
-                            NotificationCell()
-                        }
-                    }
+                    // Profile header
+                    ProfileHeaderView()
+
+                    // Post Grid View
+                    PostGridView()
                 }
                 .padding(.top)
             }
-            .navigationTitle("Notifications")
+            .navigationTitle("Profile")
             .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
 
 #Preview {
-    NotificationView()
+    CurrentUserProfileView()
 }
