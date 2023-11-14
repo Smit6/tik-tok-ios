@@ -11,16 +11,18 @@ struct ExploreView: View {
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
-                LazyVStack(spacing: 16) {
-                    ForEach(0 ..< 20) { user in
-                        UserCell()
-                            .padding(.horizontal)
+                VStack {
+                    LazyVStack(spacing: 16) {
+                        ForEach(0 ..< 20) { user in
+                            UserCell()
+                                .padding(.horizontal)
+                        }
                     }
                 }
+                .padding(.top)
             }
             .navigationTitle("Explore")
             .navigationBarTitleDisplayMode(.inline)
-            .padding(.top)
         }
     }
 }
